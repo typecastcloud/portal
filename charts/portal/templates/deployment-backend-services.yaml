@@ -278,18 +278,18 @@ spec:
         - name: "DIM__MAXVALIDATIONTIMEINDAYS"
           value: "{{ .Values.backend.processesworker.dim.maxValidationTimeInDays }}"
         - name: "DIM__ENCRYPTIONCONFIGINDEX"
-          value: "{{ .Values.backend.processesworker.dim.encryptionConfigIndex }}"
+          value: "{{ .Values.backend.processesworker.issuerComponent.encryptionConfigIndex }}"
         - name: "DIM__ENCRYPTIONCONFIGS__0__INDEX"
-          value: "{{ .Values.backend.processesworker.dim.encryptionConfigs.index0.index }}"
+          value: "{{ .Values.backend.processesworker.issuerComponent.encryptionConfigs.index0.index }}"
         - name: "DIM__ENCRYPTIONCONFIGS__0__ENCRYPTIONKEY"
           valueFrom:
             secretKeyRef:
               name: "{{ .Values.backend.interfaces.secret }}"
-              key: "dim-encryption-key0"
+              key: "issuerComponent-encryption-key0"
         - name: "DIM__ENCRYPTIONCONFIGS__0__CIPHERMODE"
-          value: "{{ .Values.backend.processesworker.dim.encryptionConfigs.index0.cipherMode }}"
+          value: "{{ .Values.backend.processesworker.issuerComponent.encryptionConfigs.index0.cipherMode }}"
         - name: "DIM__ENCRYPTIONCONFIGS__0__PADDINGMODE"
-          value: "{{ .Values.backend.processesworker.dim.encryptionConfigs.index0.paddingMode }}"
+          value: "{{ .Values.backend.processesworker.issuerComponent.encryptionConfigs.index0.paddingMode }}"
         ports:
         - name: http
           containerPort: {{ .Values.portContainer }}

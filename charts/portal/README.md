@@ -464,11 +464,11 @@ dependencies:
 | backend.processesworker.dim.universalResolverAddress | string | `"https://resolver.example.org/did"` | Url of a public available universal resolver to validate the did and did document |
 | backend.processesworker.dim.didDocumentPath | string | `"/api/administration/staticdata/did"` | path where the did document will be hosted |
 | backend.processesworker.dim.maxValidationTimeInDays | int | `7` |  |
-| backend.processesworker.dim.encryptionConfigIndex | int | `0` |  |
-| backend.processesworker.dim.encryptionConfigs.index0.index | int | `0` |  |
-| backend.processesworker.dim.encryptionConfigs.index0.cipherMode | string | `"CBC"` |  |
-| backend.processesworker.dim.encryptionConfigs.index0.paddingMode | string | `"PKCS7"` |  |
-| backend.processesworker.dim.encryptionConfigs.index0.encryptionKey | string | `""` | EncryptionKey for dim wallet creation. Secret-key 'dim-encryption-key0'. Expected format is 256 bit (64 digits) hex. |
+| backend.processesworker.issuerComponent.encryptionConfigIndex | int | `0` |  |
+| backend.processesworker.issuerComponent.encryptionConfigs.index0.index | int | `0` |  |
+| backend.processesworker.issuerComponent.encryptionConfigs.index0.cipherMode | string | `"CBC"` |  |
+| backend.processesworker.issuerComponent.encryptionConfigs.index0.paddingMode | string | `"PKCS7"` |  |
+| backend.processesworker.issuerComponent.encryptionConfigs.index0.encryptionKey | string | `""` | EncryptionKey for dim wallet creation. Secret-key 'issuerComponent-encryption-key0'. Expected format is 256 bit (64 digits) hex. |
 | backend.processesworker.issuerComponent.clientId | string | `"issuercomponent-client-id"` | Provide dim client-id from CX IAM centralidp. |
 | backend.processesworker.issuerComponent.clientSecret | string | `""` | Client-secret for dim client-id. Secret-key 'issuercomponent-client-secret'. |
 | backend.processesworker.issuerComponent.grantType | string | `"client_credentials"` |  |

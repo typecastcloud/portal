@@ -261,9 +261,6 @@ backend:
       clientId: "<path:portal/data/int/dim-iam#client-id>"
       clientSecret: "<path:portal/data/int/dim-iam#client-secret>"
       universalResolverAddress: "https://dev.uniresolver.io/"
-      encryptionConfigs:
-        index0:
-          encryptionKey: "<path:portal/data/int/encryption-keys#dim-encryption-key0>"
     issuerComponent:
       clientId: "<path:portal/data/portal-iam-clientIds#issuercomponent-client-id>"
       clientSecret: "<path:portal/data/int/iam/centralidp-client-secrets#portal-issuer-sa>"
